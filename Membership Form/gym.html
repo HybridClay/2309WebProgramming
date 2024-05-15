@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html> <!--Adrian Vazquez-->
+
+<head>
+		<script>
+			function ValidateForm(){
+		if (document.forms["myForm"] ["firstname"].value==null	
+		|| document.forms["myForm"] ["firstname"].value=="")
+		{alert("First Name must be filled out");
+		return false;
+		}
+		if (document.forms["myForm"]["lastname"].value==null
+        || document.forms["myForm"]["lastname"].value=="") 
+          {    alert("Last name must be filled out");  
+               return false;   
+	      }
+		if (document.forms["myForm"]["phone"].value==null
+        || document.forms["myForm"]["phone"].value=="") 
+          {    alert("Phone number must be filled out");  
+               return false;   
+	      }
+		  if (document.forms["myForm"]["email"].value==null
+        || document.forms["myForm"]["email"].value=="") 
+          {    alert("Email address must be filled out");   
+               return false;   
+	      }
+		  if (document.forms["myForm"]["address"].value==null
+        || document.forms["myForm"]["address"].value=="") 
+          {    alert("Address must be filled out");  
+               return false;   
+	      }
+		  if (document.forms["myForm"]["city"].value==null
+        || document.forms["myForm"]["city"].value=="") 
+          {    alert("City must be filled out");  
+               return false;   
+	      }
+		  if (document.forms["myForm"]["zip"].value==null
+        || document.forms["myForm"]["zip"].value=="") 
+          {    alert("Zip code must be filled out");  
+               return false;   
+	      }
+		  if (document.forms["myForm"]["cardnumber"].value==null
+        || document.forms["myForm"]["cardnumber"].value=="") 
+          {    alert("Card number must be filled out");  
+		       return false;
+	      }
+
+		}
+		</script>
+		<h2>Member information</h2>
+		<form name="myForm" action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post" onsubmit="return ValidateForm()">
+		First Name:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Last name:  <br/>
+		<input type="text" name="firstname">&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="lastname"><br/>
+		Phone Number:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Email Address: <br/>
+		<input type="tel" name="phone" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12">&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" required placeholder="Enter a valid email"><br/>
+		Address: <br/>
+		<input style="width:340px;" type="text" name="address"> <br/>
+		City: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; State: &nbsp;&nbsp;&nbsp;&nbsp; Zip: <br/>
+		<input type="text" name="city"> &nbsp;&nbsp;&nbsp; <select name="state"><option>AL</option><option>NY</option><option>CA</option></select>&nbsp;&nbsp;&nbsp;&nbsp;<input style="width:80px;" type="number" name="zip" maxlength="5"> <br/><br/>
+		<h2>Billing Informaiton</h2>
+		Card Number: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Expiration Date: <br/>
+		<input type="number" name="cardnumber" maxlength="16"> &nbsp;&nbsp;&nbsp; <select name="month"><option>January</option><option>February</option><option>March</option><option>April</option><option>May</option><option>June</option><option>July</option><option>August</option><option>September</option><option>October</option><option>November</option><option>December</option></select> <select name="year"><option>2016</option><option>2017</option><option>2018</option><option>2019</option><option>2020</option></select> <br/><br/>
+		<input type="submit" value="Review and Confirm"/>
+		</form>
+</head>
+<body>
+
+</body>
+</html>
