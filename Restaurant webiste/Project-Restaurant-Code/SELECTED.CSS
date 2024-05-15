@@ -1,0 +1,78 @@
+body{
+	background-image: url(https://img.freepik.com/free-photo/top-view-delicious-spaghetti-with-copy-space_23-2150857950.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+h1{
+	font-style:italic;
+	color:yellow;
+	font-weight:bold;
+	font-size:60px;
+	text-align:right;
+}
+table{
+	
+	position:absolute;
+	bottom:75%;
+	left:60%;
+}
+th{
+	text-align:right;
+	color:tomato;
+	font-size:28px;
+	font-family:ariel;
+}
+div{
+	position:absolute;
+	bottom:7%;
+	right:40%;
+}
+#upp{
+	position:absolute;
+	bottom:40%;
+    right:40%;
+}
+#footer{
+	position:absolute;
+        bottom:0%;
+	right:37%;
+        height:0px;
+	top:750px;
+}
+a:link{
+	color:#CCCCCC;
+	text-decoration:none;
+}
+a:visited{
+	text-decoration: none;
+	color: #CCCCCC;
+}
+a:hover{
+	text-decoration: none;
+	color: #CCCCCC;
+}
+a:active{
+	text-decoration: none;
+	color: #CCCCCC;
+}
+p{
+	color:grey;
+}
+.linep{
+	color:tomato;
+	font-size:28px;
+	text-align:center;
+	font-weight:bold;
+}
+label{
+	color:DarkKhaki;
+}
+ul{
+	color:DarkKhaki;
+}

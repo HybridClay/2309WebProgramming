@@ -1,0 +1,58 @@
+<!Doctype html> <!--Adrian Vazquez-->
+<head>
+<title>La Superior NYC</title>
+<link rel="stylesheet" href="selected.css" type="text/css">
+<script>
+	function ValidatForm(){
+	if (document.forms["myForm"] ["nombre"].value==null	
+	|| document.forms["myForm"] ["nombre"].value=="")
+	{      alert("Name must be filled out");
+	       return false;
+	}
+	if (document.forms["myForm"]["phone"].value==null
+        || document.forms["myForm"]["phone"].value=="") 
+          {    alert("Phone must be filled out");  
+               return false;   
+	  }
+	if (document.forms["myForm"]["e-mail"].value==null
+	|| document.forms["myForm"]["e-mail"].value=="")
+	{      alert("E-mail must be filled out");
+	       return false;
+	}
+
+	}
+	</script>
+</head>
+<body>
+<h1>la Superior</h1>
+
+<table>
+        <tr><td style ="font-size:25px;"><a href="menu.html" onMouseOver="this.style.color='tomato'" onMouseOut="this.style.color='DarkKhaki'"> menu </td></tr> 
+	<tr><th> contacto </th></tr>
+	<tr><td style ="font-size:25px;"><a href="map.html" onMouseOver="this.style.color='tomato'" onMouseOut="this.style.color='DarkKhaki'"> map </td></tr>
+	<tr><td style ="font-size:20px;"><a href="catering.html" onMouseOver="this.style.color='tomato'" onMouseOut="this.style.color='DarkKhaki'"> catering </td></tr><br/><br/>
+	<tr><td style ="font-size:25px;"><a href="Project-Restaurant.html" onMouseOver="this.style.color='tomato'" onMouseOut="this.style.color='DarkKhaki'">home</td></tr>
+</table>
+<img src="http://lasuperiornyc.com/contactinfo.gif" style="position:absolute;top:40%" alt="lasuperiornyc Address HERE"/>
+<center>
+<p style="color:DarkKhaki"> Join the La Superior mailing list.</p><br/>
+<p style="color:DarkKhaki"> As a member, you will recieve our newsletter with: </p>
+<ul>
+<li>Weekly specials.</li>
+<li>Special events.</li>
+<li>News and hints.</li>
+</ul><br/>
+<form name="myForm" action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post"
+onsubmit="return ValidateForm()" >
+<label>Nombre:</label> <input type="text" name="nombre" /><br/>
+<label>Phone:</label> <input type="text" name="phone" /><br/>
+<label>E-mail:</label> <input type="text" name="e-mail" /><br/>
+<label>Comment: </label> <textarea rows="10" cols="30"> </textarea> 
+<input type="submit" value="Click to Submit" /> </form>
+</center>
+
+<div style="align-content: center;">
+	<p> <a href="mailto:ricidfe@yahoo.com">Web Application by Moviil <img src="https://plus.unsplash.com/premium_photo-1661432769134-758550b8fedb?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVzdGF1cmFudCUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D" width="20" height="20" style="border: 0px;"></a>, &quot;La Superior 2017&quot;</p> 
+</div>
+</body>
+</html> 
